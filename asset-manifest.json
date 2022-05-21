@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.d6bc1560.css",
-    "main.js": "/static/js/main.dd108144.js",
-    "static/media/desktop-bot-bg.png": "/static/media/desktop-bot-bg.25cb63b29807b74dc8eb.png",
-    "static/media/mobile-top-bg2.png": "/static/media/mobile-top-bg2.357e7a54cd86d1005123.png",
-    "static/media/logo.svg": "/static/media/logo.f0c4feed28f3008f1a1b749cfa5c7f61.svg",
-    "index.html": "/index.html",
-    "main.d6bc1560.css.map": "/static/css/main.d6bc1560.css.map",
-    "main.dd108144.js.map": "/static/js/main.dd108144.js.map"
+    "main.css": "/yoko-movie-search/static/css/main.d6bc1560.css",
+    "main.js": "/yoko-movie-search/static/js/main.f944f20d.js",
+    "static/media/desktop-bot-bg.png": "/yoko-movie-search/static/media/desktop-bot-bg.25cb63b29807b74dc8eb.png",
+    "static/media/mobile-top-bg2.png": "/yoko-movie-search/static/media/mobile-top-bg2.357e7a54cd86d1005123.png",
+    "static/media/logo.svg": "/yoko-movie-search/static/media/logo.f0c4feed28f3008f1a1b749cfa5c7f61.svg",
+    "index.html": "/yoko-movie-search/index.html",
+    "main.d6bc1560.css.map": "/yoko-movie-search/static/css/main.d6bc1560.css.map",
+    "main.f944f20d.js.map": "/yoko-movie-search/static/js/main.f944f20d.js.map"
   },
   "entrypoints": [
     "static/css/main.d6bc1560.css",
-    "static/js/main.dd108144.js"
+    "static/js/main.f944f20d.js"
   ]
 }
