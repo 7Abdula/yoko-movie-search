@@ -6,7 +6,6 @@
 @tailwind utilities;
 
 .app-container {
-  /* background: linear-gradient(180deg, #0C0000 90.38%, rgba(12, 0, 0, 0.12) 99.81%, rgba(12, 0, 0, 0.08) 102.06%, rgba(12, 0, 0, 0.04) 103.6%, rgba(12, 0, 0, 0.01) 104.67%, rgba(12, 0, 0, 0.005) 106.94%); */
   background-color: #0C0000;
 }
 

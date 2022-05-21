@@ -10,7 +10,7 @@ function Movies({movie}) {
           <h1 className="text-sm md:text-base text-center">{movie.Title}</h1>
         </div>
         <span className="absolute inset-0 bg-[#FF0101] opacity-0 hover:opacity-20 transition"></span>
-        <img src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/400'} alt={movie.Title} className="w-full h-full hover:bg-slate-400" />
+        <img src={movie.Poster !== 'N/A' ? movie.Poster : 'https://via.placeholder.com/400'} alt={movie.Title} className="w-full h-full" />
       </div>
     </div>
   )
