@@ -24,8 +24,8 @@ function App() {
 
 
   return (
-    <div className="app-container min-h-screen overflow-hidden relative">
-      <img src={mobileBg} alt="mobile-bg" className="absolute -right-[100px] md:right-0 top-[180px] md:top-10 min-w-fit" />
+    <div className="app-container min-h-screen overflow-hidden relative z-10">
+      <img src={mobileBg} alt="mobile-bg" className="absolute -right-[100px] md:right-0 top-[180px] md:top-10 min-w-fit -z-10" />
       <img src={desktopBg} alt="desktop-bg" className="absolute -bottom-24 -left-[120px] min-w-fit" />
 
       <div className="py-6 header flex flex-col md:flex-row md:gap-6 md:px-[200px] items-center justify-center px-8 w-full z-20 fixed">
@@ -33,7 +33,13 @@ function App() {
           <img src={Logo} alt="Logo" className="min-w-16" />
           <h1 className="font-geo text-white text-3xl ml-2">YOKO</h1>
         </div>
-        <input placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)} className="mt-8 md:mt-0 md:ml-auto outline-0 border-2 rounded-lg pl-2  max-w-sm md:min-w-[250px] w-full drop-shadow-[0_2px_2px_rgba(0,0,0,0.12)] font-ibm text-gray-700 py-[6px] text-sm front-medium" />
+        <input placeholder="Search for a movie..." value={search} 
+        onKeyPress={e => {
+          if (e.key === 'Enter') {
+            getMovies(search)
+          }
+        }}
+        onChange={(e) => setSearch(e.target.value)} className="mt-8 md:mt-0 md:ml-auto outline-0 border-2 rounded-lg pl-2  max-w-sm md:min-w-[250px] w-full drop-shadow-[0_2px_2px_rgba(0,0,0,0.12)] font-ibm text-gray-700 py-[6px] text-sm front-medium" />
         <button className="mt-4 md:mt-0 bg-[#B00B1E] rounded-lg py-2 md:py-1 px-4 md:px-7 font-geo font-medium text-sm md:text-xl text-white drop-shadow-[0_2px_2px_rgba(156,90,90,0.25)] border border-[#873E3E] border-opacity-50 button-search" onClick={() => getMovies(search)}>Search</button>
       </div>
 
@@ -46,9 +52,8 @@ function App() {
             ))}
           </div>
         ) : (
-          <div>
-            <h1 className="text-2xl text-white">No movies found</h1>
-
+          <div className="mt-[270px] md:mt-32 flex justify-center items-center container font-ibm mx-auto">
+            <h1 className="text-white text-3xl">No movies found</h1>
           </div>
         )
       }

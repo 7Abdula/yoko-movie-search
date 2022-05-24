@@ -4,7 +4,7 @@ import React from 'react'
 function Movies({movie}) {
   return (
     <div className="">   
-      <div className="max-w-[170px] sm:max-w-[220px] max-h-[268px] sm:max-h-[318px] overflow-hidden rounded-2xl bg-slate-200 relative hover:scale-110 transition cursor-pointer">
+      <div className="w-[170px] sm:w-[220px] h-[268px] sm:h-[318px] overflow-hidden rounded-2xl bg-slate-200 relative hover:scale-110 transition cursor-pointer">
         <div className="absolute bottom-0 w-full py-4 px-2 card-info flex flex-col justify-center items-center font-ibm text-white">
           <p className="text-xs">{movie.Year}</p>
           <h1 className="text-sm md:text-base text-center">{movie.Title}</h1>
