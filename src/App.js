@@ -5,7 +5,7 @@ import desktopBg from './assets/desktop-bot-bg.png'
 import Logo from './assets/logo.svg'
 import { useEffect, useState } from "react";
 
-const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=98b8bac4";
+const API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=98b8bac4";
 
 function App() {
 
