@@ -1,3 +1,4 @@
+import React from "react";
 import Movies from "./components/Movies";
 import mobileBg from './assets/mobile-top-bg2.png'
 import desktopBg from './assets/desktop-bot-bg.png'
